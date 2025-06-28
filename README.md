@@ -12,7 +12,7 @@ Este script de Python lee el puerto COM donde está conectado el lector GM65 (qu
 ## Hardware Utilizado
 - Arduino UNO
 - Lector de códigos de barras GM65 (conectado vía USB)
-- Pantalla LCD 16x2 con interfaz I²C
+- Pantalla LCD 16x2 con interfaz I2C
 - Cables de conexión (jumpers)
 
 ## Instalación
