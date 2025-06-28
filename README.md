@@ -1,14 +1,21 @@
-# Registro de pase de lista
+# Sistema de Registro de Asistencia con Códigos de Barras
 
 ## Descripción
-El Script de python lee el puerto COM al que esta conectado el gm65 ya que este esta en mod HID (teclado), al momento de que el GM65 lea algun codigo de barras (por ejemplo de la credencial del estudiante o incluso del maestro) y si esta coincide con la base de datos (en este caso una realizada en excel con la informacion del estudiante o maestro), en la terminal de visual studio code se mostrara un mensaje de la hora de entrada de esa persona, si se vuelve a repetir ese estudiante, lo registra en la base de datos como hora de salida.
-## Hardware Usado
+Este script de Python lee el puerto COM donde está conectado el lector GM65 (que funciona en modo HID como dispositivo de entrada tipo teclado). Cuando el lector escanea un código de barras (por ejemplo, de una credencial estudiantil o de profesor), el sistema:
+
+1. Busca coincidencias en la base de datos (archivo Excel con información de usuarios)
+2. Registra en la terminal de Visual Studio Code:
+   - **Primer escaneo**: Marca hora de entrada
+   - **Segundo escaneo**: Registra hora de salida en la base de datos
+3. Actualiza automáticamente el registro de asistencia
+
+## Hardware Utilizado
 - Arduino UNO
-- Sensor GM65 (conectado a USB a la laptop)
-- Pantalla LCD 16x2 i2C
-- Jumpers (Cables)
+- Lector de códigos de barras GM65 (conectado vía USB)
+- Pantalla LCD 16x2 con interfaz I²C
+- Cables de conexión (jumpers)
 
 ## Instalación
-1. Clona este repositorio.
-2. Abre `PantallaLCD.ino` en el IDE de Arduino.
-3. Sube el código a tu placa de arduino.
+1. Clona este repositorio
+2. Copia el codigo de la imagen en el IDE de Arduino
+3. Sube el código a tu placa Arduino
