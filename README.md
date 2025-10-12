@@ -15,7 +15,4 @@ Este script de Python lee el puerto COM donde está conectado el lector GM65 (qu
 - Pantalla LCD 16x2 con interfaz I2C
 - Cables de conexión (jumpers)
 
-## Instalación
-1. Clona este repositorio
-2. Copia el codigo de la imagen en el IDE de Arduino
-3. Sube el código a tu placa Arduino
+
